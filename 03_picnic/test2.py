@@ -4,7 +4,7 @@
 import os
 from subprocess import getoutput
 
-prg = './picnic.py'
+prg = './soltuion.py'
 
 
 # --------------------------------------------------
@@ -21,7 +21,6 @@ def test_usage():
     for flag in ['', '-h', '--help']:
         out = getoutput(f'{prg} {flag}')
         assert out.lower().startswith('usage')
-
 
 # --------------------------------------------------
 def test_one():
