@@ -4,7 +4,7 @@
 import os
 from subprocess import getoutput
 
-prg = './soltuion.py'
+prg = './solution.py'
 
 
 # --------------------------------------------------
