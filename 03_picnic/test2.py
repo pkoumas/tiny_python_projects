@@ -22,6 +22,7 @@ def test_usage():
         out = getoutput(f'{prg} {flag}')
         assert out.lower().startswith('usage')
 
+
 # --------------------------------------------------
 def test_one():
     """one item"""
