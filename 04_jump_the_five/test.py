@@ -26,17 +26,19 @@ def test_usage():
 
 # --------------------------------------------------
 def test_01():
-    """test"""
+    """Make a jazz noise here"""
 
-    rv, out = getstatusoutput(f'{prg} 123-456-7890')
-    assert rv == 0
-    assert out == '987-604-3215'
+
+rv, out = getstatusoutput(f'{prg} 123-456-7890')
+assert rv == 0
+assert out == '987-604-3215'
 
 
 # --------------------------------------------------
 def test_02():
     """test"""
 
-    rv, out = getstatusoutput(f'{prg} "That number to call is 098-765-4321."')
-    assert rv == 0
-    assert out.rstrip() == 'That number to call is 512-340-6789.'
+
+rv, out = getstatusoutput(f'{prg} "That number to call is 098-765-4321."')
+assert rv == 0
+assert out.rstrip() == 'That number to call is 512-340-6789.'
